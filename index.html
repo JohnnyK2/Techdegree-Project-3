@@ -86,29 +86,36 @@
             <input type="text" id="zip" name="user_zip">
         </fieldset>
       </div>
+      <div class="newsletter">
+        <fieldset>
+          <legend>Newsletter</legend>
+            <label>Select the newsletters you would like to receive:</label>
+            <input type="checkbox" id="html-news" value="newsletter_html" name="user_newsletter"><lable for="html-news">HTML News</lable><br>
+            <input type="checkbox" id="css-news" value="newsletter_css" name="user_newsletter"><lable for="css-news">CSS News</lable><br>
+            <input type="checkbox" id="javascript-news" value="newsletter_javascript" name="user_newsletter"><lable for="javascript-news">Javascript News</lable>
+        </fieldset>
 
-      <fieldset>
-        <legend>Newsletter</legend>
-          <label>Select the newsletters you would like to receive:</label>
-          <input type="checkbox" id="html-news" value="newsletter_html" name="user_newsletter"><lable for="html-news">HTML News</lable><br>
-          <input type="checkbox" id="css-news" value="newsletter_css" name="user_newsletter"><lable for="css-news">CSS News</lable><br>
-          <input type="checkbox" id="javascript-news" value="newsletter_javascript" name="user_newsletter"><lable for="javascript-news">Javascript News</lable>
-      </fieldset>
+        <fieldset>
+          <label>Newsletter Format</label>
+          <input type="radio" id="html-format" value="html-format" name="user_newsletter_format"><lable for="html_format">HTML Format</lable><br>
+          <input type="radio" id="plain-text" value="plain_text" name="user_newsletter_format"><lable for="plain-text">Plain Text</lable>
+        </fieldset>
+      </div>
 
-      <fieldset>
-        <label>Newsletter Format</label>
-        <input type="radio" id="html-format" value="html-format" name="user_newsletter_format"><lable for="html_format">HTML Format</lable><br>
-        <input type="radio" id="plain-text" value="plain_text" name="user_newsletter_format"><lable for="plain-text">Plain Text</lable>
-      </fieldset>
-
-      <fieldset>
-        <label for="topic-interests">Other topics you'd like to hear about:</label>
-        <textarea name="user_topic_interests" id="topic-interests" cols="30" rows="10"></textarea>
-      </fieldset>
+      <div  class="topics">
+        <fieldset>
+          <label for="topic-interests">Other topics you'd like to hear about:</label>
+          <textarea name="user_topic_interests" id="topic-interests" cols="30" rows="10"></textarea>
+        </fieldset>
+     </div>
 
     </form>
   </div>
+
+  <div class="btn">
     <button type="submit">Sign Up</button>
+  </div>
+  
     <footer>
       <p>&copy; The Code Review</p>
     </footer>
