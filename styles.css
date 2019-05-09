@@ -2,12 +2,15 @@
 /*-----------BASE STYLES------------*/
 
 
-* {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   min-width: 260px;
+  font-family: 'Rosarivo', serif, sans-serif;
 }
 
 h1 {
@@ -54,22 +57,26 @@ textarea:hover {
 }
 
 input,
-label,
-h2,
-p {
-  font-family: 'Rosarivo', serif, sans-serif;
-}
-
-input,
 select,
 textarea,
 label {
   display: block;
 }
 
+input[placeholder="Required"] {
+  text-align: right;
+  font-style: italic;
+  padding-right: 20px;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
 }
 
 legend,
