@@ -15,7 +15,7 @@ body {
 
 h1 {
   color: white;
-  background-color: black;
+  background-color: #330a00;
   padding: 1rem;
   text-align: center;
   margin-top: 0;
@@ -51,9 +51,17 @@ legend {
   font-family: 'Germania One', serif, sans-serif;
 }
 
-input:hover,
-textarea:hover {
-  border: 2px solid navy;
+.contact input:focus,
+.topics textarea:focus {
+  background-color: white;
+}
+
+ .contact input:hover,
+ .topics textarea:hover,
+ .contact select:hover,
+ .contact #zip:hover  {
+  border: 2px solid #991f00;
+  background: white;
 }
 
 input,
@@ -63,15 +71,10 @@ label {
   display: block;
 }
 
-input[placeholder="Required"] {
+input::placeholder {
   text-align: right;
   font-style: italic;
-  padding-right: 20px;
-}
-
-input[placeholder="Required"]:focus {
-  text-align: left;
-  font-style: normal;
+  padding-right: 40px;
 }
 
 input[type="checkbox"],
@@ -83,11 +86,6 @@ input[type="radio"] {
 input[type="checkbox"]:hover,
 input[type="radio"]:hover {
   cursor: pointer;
-}
-
-input[type="checkbox"]:checked,
-input[type="radio"]:checked {
-  box-shadow: 0 0 0 10px aqua;
 }
 
 legend,
@@ -103,6 +101,7 @@ form {
   border-top: 5px solid black;
   width: 90%;
   margin: auto;
+  background-color: #ffffe6;
 }
 
 .form {
@@ -129,6 +128,7 @@ form {
 }
 
 .contact #zip {
+  text-align: center;
   width: 40%;
   height: 3rem;
   border-radius: 5px;
@@ -164,25 +164,34 @@ textarea {
 .btn {
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  margin: 2rem auto;
+  width: 100%;
 }
 
 button {
-  background-color: #433e4c;
+  background-color: #801a00;
   color: white;
   padding: 20px 0;
-  width: 100%;
+  width: 96.5%;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #8fbc8f;
+  background-color: #ff471a;
 }
 
 button:active {
-  background-color: #90ee90;
+  background-color: #ff8566;
 }
 
+footer {
+  background-color: #330a00;
+}
+
+footer p {
+  padding-top: 2rem;
+  color: white;
+}
 /*----------Desktop----------*/
 
 @media (min-width: 768px) {
@@ -211,7 +220,8 @@ button:active {
     display: inline-block;
   }
 
-
-
+  .contact #zip {
+    width: 20%;
+  }
 
 }
