@@ -9,7 +9,7 @@
 }
 
 body {
-  min-width: 260px;
+  min-width: 320px;
   font-family: 'Rosarivo', serif, sans-serif;
 }
 
@@ -104,7 +104,7 @@ form {
   background-color: #ffffe6;
 }
 
-.form {
+.form-style {
   max-width: 100%;
   border-top: 2px solid white;
 }
@@ -147,15 +147,33 @@ form {
 
 .newsletter input {
   margin-top: 1.3rem;
+  display: inline-block;
+}
+
+.newsletter label {
+  display: inline-block;
+  color: black;
+}
+
+
+#format,
+#news-type {
+  display: block;
+  padding-top: 2rem;
+}
+
+.topics textarea {
+  margin: auto;
 }
 
 .topics label {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   padding-bottom: 1.3rem;
+  padding-left: 0.3rem;
 }
 
 textarea {
-  width: 100%;
+  width: 90%;
   height: 10rem;
   border-radius: 5px;
   background-color: lightgrey;
@@ -165,7 +183,7 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 2rem auto;
-  width: 100%;
+  width: 92.8%;
 }
 
 button {
