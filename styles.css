@@ -56,6 +56,16 @@ legend {
 .contact #state:focus,
 .topics textarea:focus {
   background-color: white;
+  transition-property: background-color;
+}
+
+.contact input:focus,
+.contact #zip:focus,
+.contact #state:focus,
+.topics textarea:focus {
+  background-color: white;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
 }
 
  .contact input:hover,
