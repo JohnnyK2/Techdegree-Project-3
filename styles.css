@@ -55,7 +55,6 @@ legend {
 .contact #zip:focus,
 .contact #state:focus,
 .topics textarea:focus {
-  background-color: white;
   transition-property: background-color;
 }
 
