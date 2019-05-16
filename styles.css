@@ -52,6 +52,8 @@ legend {
 }
 
 .contact input:focus,
+.contact #zip:focus,
+.contact #state:focus,
 .topics textarea:focus {
   background-color: white;
 }
@@ -102,6 +104,7 @@ form {
   width: 90%;
   margin: auto;
   background-color: #ffffe6;
+  padding-bottom: 2.5rem;
 }
 
 .form-style {
