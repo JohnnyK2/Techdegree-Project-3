@@ -61,7 +61,7 @@ legend {
  .contact select:hover,
  .contact #zip:hover  {
   border: 2px solid #991f00;
-  background: white;
+  background: #f0f0f5;
 }
 
 input,
@@ -157,9 +157,11 @@ form {
 
 
 #format,
-#news-type {
+#news-type,
+#user-input {
   display: block;
   padding-top: 2rem;
+  color: grey;
 }
 
 .topics textarea {
@@ -167,7 +169,6 @@ form {
 }
 
 .topics label {
-  margin-top: 2rem;
   padding-bottom: 1.3rem;
   padding-left: 0.3rem;
 }
@@ -183,14 +184,14 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 2rem auto;
-  width: 92.8%;
+  width: 94.8%;
 }
 
 button {
   background-color: #801a00;
   color: white;
   padding: 20px 0;
-  width: 96.5%;
+  width: 90%;
   border-radius: 5px;
 }
 
@@ -242,4 +243,7 @@ footer p {
     width: 20%;
   }
 
+  .btn {
+    width: 96.5%
+  }
 }
